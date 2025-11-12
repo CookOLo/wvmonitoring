@@ -5,23 +5,30 @@
 <head> 
 
   <meta charset="UTF-8"> 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no""> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"> 
 
   <title>Soil Moisture Monitor</title>
   <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="calculate.js"></script>
+  <script src="scripts.js"></script>
 </head> 
 
 <body> 
 
-  <h1>🌱 Soil Moisture Monitor</h1> 
-
-  <div class="container"> 
-    <div class="data" id="moistureData"> 
-      <!-- Dynamic data appears here --> 
+  <div>
+    <div> 
+      <button id="changeColor" class="darkButton" onclick="backgroundColorChange()">☾</button> 
     </div> 
-    <button onclick="generateMoistureData()">Check Moisture Levels</button> 
-  </div> 
+    <div>
+      <h1>🌱 Soil Moisture Monitor</h1> 
+    </div>
+    <div class="container"> 
+      <div class="data" id="moistureData"> 
+        <!-- Dynamic data appears here --> 
+      </div> 
+      <button onclick="generateMoistureData()">Check Moisture Levels</button> 
+    </div> 
+  </div>
+  
 
   <br><br><br><br><br><br>
   
