@@ -60,7 +60,7 @@ body {
 
  
     /* any button */
-    button { 
+    .tempButton { 
       background-color: #8C1D40; 
       color: white; 
       border: none; 
