@@ -1,0 +1,27 @@
+{
+  "name": "wvmonitoring",
+  "version": "1.0.0",
+  "description": "Website: https://wvmonitoring.neocities.org/",
+  "main": "calculate.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CookOLo/wvmonitoring.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/CookOLo/wvmonitoring/issues"
+  },
+  "homepage": "https://github.com/CookOLo/wvmonitoring#readme",
+  "dependencies": {
+    "body-parser": "^2.2.1",
+    "express": "^5.2.1",
+    "serialport": "^13.0.0"
+  }
+}

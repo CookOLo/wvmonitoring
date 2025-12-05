@@ -22,10 +22,18 @@
       <h1>🌱 Soil Moisture Monitor</h1> 
     </div>
     <div class="container"> 
-      <div class="data" id="moistureData"> 
-        <!-- Dynamic data appears here --> 
+      <!-- <div class="data" id="moistureData"> -->
+      <div>
+        <h1>Moisture Value: <span id="moisture">--</span>%</h1>
+          <script>
+           const evtSource = new EventSource('/latest');
+          evtSource.onmessage = (event) => {
+            document.getElementById('moisture').textContent = event.data;
+          };
+
+          </script>
       </div> 
-      <button class="tempButton" onclick="generateMoistureData()">Check Moisture Levels</button> 
+      <!-- <button class="tempButton" onclick="generateMoistureData()">Check Moisture Levels</button> -->
     </div> 
   </div>
   
